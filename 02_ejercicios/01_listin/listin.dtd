@@ -1,1 +1,11 @@
-<!ELEMENT listin (#PCDATA)>
+<?xml version="1.0" encoding="UTF-8" standalone = "yes" ?>
+
+<!ELEMENT listin ( contacto )+ >
+
+<!ELEMENT contaco ( nombre #PCDATA , email (* , #PCDATA) ,relacion ?>
+
+<!ATTLIST contaco id #REQUIRED >
+<!ATTLIST contaco  sexo (hombre | mujer )#IMPLIED>
+<!ATTLIST relacion EMPTY amigo_de #IMPLIED
+    enemigo_de #IMPLIED >
+
