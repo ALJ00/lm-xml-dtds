@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE personas
+        [
+                <!ELEMENT personas (persona*)>
+                <!ELEMENT persona (nombre,email+,parentesco*)>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ATTLIST nombre dni CDATA #REQUIRED
+                        edad CDATA #IMPLIED
+                        sexo CDATA ( M | H )CDATA #REQUIRED>
+                <!ELEMENT email (#PCDATA)>
+                <!ELEMENT parentesco (#PCDATA)>
+                <!ATTLIST parentesco informacion  CDATA( padre de | hermano de )CDATA #IMPLIED>
+        ]>
+
 <personas>
+    <persona>
+        <nombre dni="44686144L" edad="25" sexo=""></nombre>
+        <email>fero@gmail.com</email>
+        <parentesco informacion=""></parentesco>
+    </persona>
 </personas>
