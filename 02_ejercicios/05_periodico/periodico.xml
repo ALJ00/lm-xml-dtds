@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE periodico SYSTEM "periodico.dtd">
 <periodico>
+    <cabecera>
+        <nombre>MARCA</nombre>
+        <fecha_de_edicion>27/09/2018</fecha_de_edicion>
+        <lugar>VITORIA</lugar>
+        <numero>2</numero>
+        <precio>20</precio>
+    </cabecera>
+    <portada>
+        <titular>ALAVÉS</titular>
+        <noticia_del_dia>VICTROIA DEL ALAVÉS</noticia_del_dia>
+        <publicidad>coca_cola</publicidad>
+    </portada>
 </periodico>
