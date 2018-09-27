@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE agenda SYSTEM "agenda.dtd">
 <agenda>
+    <contacto>
+        <nombre>Pedro casas</nombre>
+        <direccion> Calle avalladolid </direccion>
+        <ciudad> Vitoria </ciudad>
+        <provincia>Alava</provincia>
+        <cd_postal>01003</cd_postal>
+        <numero>4568</numero>
+        <web>milop.com</web>
+        <compañia>mercedes</compañia>
+    </contacto>
 </agenda>
+
+
+
+
+
+
+
+
+
