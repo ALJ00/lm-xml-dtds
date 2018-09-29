@@ -13,5 +13,13 @@
         <noticia_del_dia>VICTROIA DEL ALAVÉS</noticia_del_dia>
         <publicidad>coca_cola</publicidad>
     </portada>
+    <seccion>
+        <noticia tipo="">
+            <titulo></titulo>
+            <subtitulo></subtitulo>
+            <entradilla></entradilla>
+            <cuerpo></cuerpo>
+        </noticia>
+    </seccion>
     <contraportada>BASKONIA</contraportada>
 </periodico>
