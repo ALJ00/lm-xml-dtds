@@ -1,13 +1,20 @@
-<!ELEMENT pedido (fecha, cuerpo_pedido, cliente)(#PCDATA)>
-<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT pedido (fecha, cuerpo_pedido, cliente)>
+
 <!ELEMENT cuerpo_pedido (articulo+)>
+
 <!ELEMENT articulo (nombre, tipo, unidades *, precio)>
-        <!ATTLIST articulo id CDATA #REQUIRED>
+
+        <!ATTLIST articulo
+                id CDATA #REQUIRED>
+
+        <!ELEMENT fecha (#PCDATA)>
         <!ELEMENT nombre (#PCDATA)>
         <!ELEMENT tipo (#PCDATA)>
         <!ELEMENT unidades (#PCDATA)>
         <!ELEMENT precio (#PCDATA)>
+
 <!ELEMENT cliente (nombre,direccion*)>
+
         <!ELEMENT direccion (nombre+,calle+,numero+,cp+,localidad+,provincia+)>
         <!ATTLIST direccion tipo #REQUIRED>
         <!ELEMENT calle (#PCDATA)>

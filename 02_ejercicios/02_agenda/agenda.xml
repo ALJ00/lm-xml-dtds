@@ -6,10 +6,14 @@
         <direccion> Calle avalladolid </direccion>
         <ciudad> Vitoria </ciudad>
         <provincia>Alava</provincia>
-        <cd_postal>01003</cd_postal>
-        <numero>4568</numero>
+        <cp>01003</cp>
+        <numeros>
+            <telefono>896</telefono>
+            <fax>3654</fax>
+        </numeros>
+        <email>@gmail</email>
         <web>milop.com</web>
-        <compañia>mercedes</compañia>
+        <companyia>mercedes</companyia>
     </contacto>
 </agenda>
 
