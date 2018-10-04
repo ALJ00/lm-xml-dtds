@@ -1,9 +1,14 @@
-<!ELEMENT personas (persona *)>
-        <!ELEMENT persona (nombre,email+,parentesco*)>
+<!ELEMENT personas (persona +)>
+
+        <!ELEMENT persona (nombre,email+,parentesco?)>
+        <!-- + [1..n] , * [0...n] -->
+
         <!ELEMENT nombre (#PCDATA)>
+
         <!ATTLIST nombre dni CDATA #REQUIRED
                 edad CDATA #IMPLIED
-                sexo CDATA ( M | H )CDATA #REQUIRED>
+                sexo  ( M | H ) #REQUIRED>
         <!ELEMENT email (#PCDATA)>
         <!ELEMENT parentesco (#PCDATA)>
-        <!ATTLIST parentesco informacion  CDATA( padre de | hermano de )CDATA #IMPLIED>
+        <!ATTLIST parentesco
+                informacion  CDATA( padre de | hermano de )CDATA #IMPLIED>
