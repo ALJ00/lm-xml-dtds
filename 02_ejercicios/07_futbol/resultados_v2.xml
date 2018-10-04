@@ -2,28 +2,17 @@
 <!DOCTYPE resultados SYSTEM "resultados_v2.dtd">
 <resultados>
     <partido>
-        <equipo_local goles_local="2">
-            <nombre>Zaragoza</nombre>
-        </equipo_local>
-        <equipo_visitante goles_visitante="0">
-            <nombre>Villarreal</nombre>
-        </equipo_visitante>
+        <equipo rol="L" goles="2">Zaragoza</equipo>
+        <equipo rol="V" goles="1">Villarreal</equipo>
     </partido>
     <partido>
-        <equipo_local goles_local="2">
-            <nombre>Zaragoza</nombre>
-        </equipo_local>
-        <equipo_visitante goles_visitante="0">
-            <nombre>Villarreal</nombre>
-        </equipo_visitante>
+        <equipo rol="L" goles="2">Zaragoza</equipo>
+        <equipo rol="V" goles="1">Villarreal</equipo>
     </partido>
     <partido>
-        <equipo_local goles_local="2">
-            <nombre>Zaragoza</nombre>
-        </equipo_local>
-        <equipo_visitante goles_visitante="0">
-            <nombre>Villarreal</nombre>
-        </equipo_visitante>
+        <equipo rol="L" goles="2">Zaragoza</equipo>
+        <equipo rol="V" goles="1">Villarreal</equipo>
     </partido>
+
 
 </resultados>

@@ -1,1 +1,6 @@
-<!ELEMENT universidad (#PCDATA)>
+<!ELEMENT universidad (alumno|profesor)*>
+
+<!ELEMENT alumno (datos_personales, asignaturas)>
+<!ELEMENT profesor (datos_personales, despacho, tutoria)>
+
+

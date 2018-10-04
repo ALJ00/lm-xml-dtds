@@ -1,21 +1,29 @@
 <!ELEMENT periodico (cabecera,portada,seccion*,contraportada)>
+
 <!ELEMENT cabecera (nombre,fecha_de_edicion,lugar,numero,precio) >
+
         <!ELEMENT nombre (#PCDATA)>
         <!ELEMENT fecha_de_edicion (#PCDATA)>
         <!ELEMENT lugar (#PCDATA)>
         <!ELEMENT numero (#PCDATA)>
         <!ELEMENT precio (#PCDATA)>
-<!ELEMENT portada (titular,noticia_del_dia*,publicidad*)>
+
+<!ELEMENT portada (titular,noticias_del_dia*,publicidad*)>
+
         <!ELEMENT titular (#PCDATA)>
-        <!ELEMENT noticia_del_dia (#PCDATA)>
+        <!ELEMENT noticias_del_dia (#PCDATA)>
         <!ELEMENT publicidad (#PCDATA)>
+
 <!ELEMENT seccion (noticia*)>
+
         <!ELEMENT noticia (titulo,subtitulo,entradilla,cuerpo)>
         <!ELEMENT titulo (#PCDATA)>
         <!ELEMENT subtitulo (#PCDATA)>
         <!ELEMENT entradilla (#PCDATA)>
         <!ELEMENT cuerpo (#PCDATA)>
-        <!ATTLIST noticia tipo (internacional|opinion|nacional|cultura|deportes|tv_radio) #REQUIRED>
+
+        <!ATTLIST seccion noticia_tipo (internacional|opinion|nacional|cultura|deportes|tv_radio) #REQUIRED>
+
 <!ELEMENT contraportada (#PCDATA)>
 
 

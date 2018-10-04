@@ -2,22 +2,15 @@
 <!DOCTYPE resultados SYSTEM "resultados_v1.dtd">
 <resultados>
     <partido>
-        <equipo_local>Zaragoza</equipo_local>
-        <equipo_visitante>Villarreal</equipo_visitante>
-        <goles_local>2</goles_local>
-        <goles_visitante>1</goles_visitante>
+       <equipo_local>
+           <nombre></nombre>
+           <goles></goles>
+       </equipo_local>
+        <equipo_visitante>
+            <nombre></nombre>
+            <goles></goles>
+        </equipo_visitante>
     </partido>
-    <partido>
-        <equipo_local>Athletic</equipo_local>
-        <equipo_visitante>Real Sociedad</equipo_visitante>
-        <goles_local>2</goles_local>
-        <goles_visitante>0</goles_visitante>
-    </partido>
-    <partido>
-        <equipo_local>Rayo</equipo_local>
-        <equipo_visitante>Racing</equipo_visitante>
-        <goles_local>4</goles_local>
-        <goles_visitante>2</goles_visitante>
-    </partido>
+    
 </resultados>
 
