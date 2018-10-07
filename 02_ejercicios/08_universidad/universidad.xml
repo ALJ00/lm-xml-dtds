@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE universidad SYSTEM "universidad.dtd">
 <universidad>
+    <alumno>
+        <datos_personales>
+            <identificador>
+                <DNI></DNI>
+            </identificador>
+            <nombre></nombre>
+            <apellidos></apellidos>
+            <fecha_nacimiento></fecha_nacimiento>
+        </datos_personales>
+        <asignaturas>
+            <asignatura codigo="45" nota="AP">
+                <nombre></nombre>
+                <creditos></creditos>
+                <carrera></carrera>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <profesor>
+        <datos_personales>
+            <identificador>
+                <pasaporte pais=""
+            </identificador>
+            <nombre></nombre>
+            <apellidos></apellidos>
+            <fecha_nacimiento></fecha_nacimiento>
+        </datos_personales>
+        <despacho></despacho>
+        <tutoria></tutoria>
+        <asignatura codigo="">
+            <nombre></nombre>
+            <creditos></creditos>
+            <carrera></carrera>
+        </asignatura>
+    </profesor>
 </universidad>

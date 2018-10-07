@@ -1,6 +1,38 @@
 <!ELEMENT universidad (alumno|profesor)*>
 
-<!ELEMENT alumno (datos_personales, asignaturas)>
-<!ELEMENT profesor (datos_personales, despacho, tutoria)>
+        <!ELEMENT alumno (datos_personales,asignaturas)>
+        <!ELEMENT profesor (datos_personales,despacho,tutoria,asignatura+)>
 
+        <!ELEMENT datos_personales (identificador,nombre,apellidos,fecha_nacimiento,datos_contacto?)>
 
+        <!ELEMENT identificador (DNI|pasaporte)>
+        <!ELEMENT DNI (#PCDATA)>
+        <!ELEMENT pasaporte (#PCDATA)>
+        <!ATTLIST pasaporte
+                pais CDATA #REQUIRED
+                >
+
+        <!ELEMENT datos_contacto (direccion|telefono|email)*>
+
+        <!ELEMENT asignaturas (asignatura+)>
+
+        <!ELEMENT asignatura (nombre,creditos,carrera)>
+        <!ATTLIST asignatura
+                codigo CDATA #REQUIRED
+                nota (NP|SS|AP|NT|SB|MH) #IMPLIED
+                >
+
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellidos (#PCDATA)>
+        <!ELEMENT fecha_nacimiento (#PCDATA)>
+
+        <!ELEMENT direccion (#PCDATA)>
+        <!ELEMENT telefono (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+
+        <!ELEMENT despacho (#PCDATA)>
+        <!ELEMENT tutoria (#PCDATA)>
+
+        <!ELEMENT codigo (#PCDATA)>
+        <!ELEMENT creditos (#PCDATA)>
+        <!ELEMENT carrera (#PCDATA)>
