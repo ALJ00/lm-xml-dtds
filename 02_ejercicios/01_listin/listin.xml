@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE listin SYSTEM "listin.dtd">
 <listin>
-    <persona id="ijauregu">
-        <nombre>Ion Jaureguialzo Sarasola</nombre>
-        <email>ijaureguialzo@egibide.org</email>
-        <email>widemos@gmail.com</email>
-        <relacion amigo_de="earbaiza"/>
-    </persona>
-    <persona id="earbaiza">
-        <nombre>Eider</nombre>
-    </persona>
+
+
+    <contacto id="" sexo="hombre">
+
+        <nombre>jose</nombre>
+        <email>@gmail</email>
+        <relacion amigo_de="espinete" enemigo_de="don pimpon"></relacion>
+
+    </contacto>
+
+    <contacto id="6932">
+        <nombre>oscar</nombre>
+    </contacto>
+
+
+
 </listin>
