@@ -1,27 +1,35 @@
-<!ELEMENT pedido (fecha, cuerpo_pedido, cliente)>
+<!ELEMENT pedido (datos_cliente, datos_pedido, datos_pago)>
 
-<!ELEMENT cuerpo_pedido (articulo+)>
+<!ELEMENT datos_pago (direccion)>
+        <!ELEMENT direccion (#PCDATA)>
 
-<!ELEMENT articulo (nombre, tipo, unidades *, precio)>
+        <!ATTLIST datos_pago forma_pago (tarjeta|contado)>
 
-        <!ATTLIST articulo
-                id CDATA #REQUIRED>
+<!ELEMENT datos_cliente (nombre, direccion_envio, telefono, mail)>
+        <!ELEMENT telefono (#PCDATA)>
+        <!ELEMENT mail (#PCDATA)>
 
-        <!ELEMENT fecha (#PCDATA)>
-        <!ELEMENT nombre (#PCDATA)>
-        <!ELEMENT tipo (#PCDATA)>
-        <!ELEMENT unidades (#PCDATA)>
-        <!ELEMENT precio (#PCDATA)>
-
-<!ELEMENT cliente (nombre,direccion*)>
-
-        <!ELEMENT direccion (nombre+,calle+,numero+,cp+,localidad+,provincia+)>
-        <!ATTLIST direccion tipo #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT direccion_envio (calle, localidad, provincia, cod_postal)>
         <!ELEMENT calle (#PCDATA)>
-        <!ELEMENT numero (#PCDATA)>
-        <!ELEMENT cp (#PCDATA)>
         <!ELEMENT localidad (#PCDATA)>
         <!ELEMENT provincia (#PCDATA)>
+        <!ELEMENT cod_postal (#PCDATA)>
+
+<!ELEMENT datos_pedido (producto+)>
+        <!ELEMENT producto (nombre, modelo,caracteristica, cantidad, precio)>
+        <!ELEMENT modelo (#PCDATA)>
+        <!ELEMENT cantidad (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ELEMENT caracteristica (#PCDATA)>
+
+
+<!ATTLIST producto  codigo CDATA #REQUIRED>
+<!ATTLIST datos_pedido fecha CDATA #REQUIRED>
+<!ATTLIST datos_pedido responsable_pedido (Antonio|Asun|Olga) #REQUIRED>
+<!ATTLIST caracteristica electrica(si|no) #REQUIRED>
+
+
 
 
 

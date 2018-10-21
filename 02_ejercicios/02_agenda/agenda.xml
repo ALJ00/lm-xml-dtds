@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
 <!DOCTYPE agenda SYSTEM "agenda.dtd" >
 
 <agenda>
     <contacto>
-        <nombre></nombre>
-        <direccion></direccion>
-        <ciudad></ciudad>
-        <provincia></provincia>
-        <cod_postal></cod_postal>
+        <nombre>aitor</nombre>
+        <direccion>avenida de los olmos</direccion>
+        <ciudad>vitoria</ciudad>
+        <provincia>alava</provincia>
+        <cod_postal>01002</cod_postal>
         <numeros>
-            <telefono></telefono>
-            <fax></fax>
+            <telefono>963963</telefono>
+            <fax>456987</fax>
         </numeros>
-        <mail></mail>
-        <web></web>
-        <compañia></compañia>
+        <mail>@gmail</mail>
+        <web>la web</web>
+        <compañia>company</compañia>
     </contacto>
     
     <contacto>
-        <nombre></nombre>
-        <direccion></direccion>
+        <nombre>peio</nombre>
+        <direccion>calle dato</direccion>
         <ciudad></ciudad>
-        <provincia></provincia>
-        <cod_postal></cod_postal>
+        <provincia>araba</provincia>
+        <cod_postal>01005</cod_postal>
         <numeros>
-            <telefono></telefono>
-            <fax></fax>
+            <telefono>456789</telefono>
+            <fax>258963</fax>
         </numeros>
-        <mail></mail>
-        <web></web>
-        <compañia></compañia>
+        <mail>@gmail</mail>
+        <web>@web</web>
+        <compañia>company</compañia>
     </contacto>
 </agenda>
 
