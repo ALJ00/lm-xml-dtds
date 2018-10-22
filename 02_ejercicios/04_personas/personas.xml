@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> <!-- si se pone yes le dices que tiene dtd asociada -->
 
-<!DOCTYPE personas
-        [
-                <!ELEMENT personas (persona*)>
-                <!ELEMENT persona (nombre,email+,parentesco*)>
-                <!ELEMENT nombre (#PCDATA)>
-                <!ATTLIST nombre dni CDATA #REQUIRED
-                        edad CDATA #IMPLIED
-                        sexo CDATA ( M | H )CDATA #REQUIRED>
-                <!ELEMENT email (#PCDATA)>
-                <!ELEMENT parentesco (#PCDATA)>
-                <!ATTLIST parentesco informacion  CDATA( padre de | hermano de )CDATA #IMPLIED>
+<!DOCTYPE personas [
+
+        <!ELEMENT personas (persona+)>
+
+        <!ELEMENT persona (nombre,emails,parentescos?) >
+
+        <!ATTLIST nombre
+                DNI CDATA #REQUIRED
+                edad CDATA #IMPLIED
+                sexo (M|H) #REQUIRED
+                >
+
+        <!ELEMENT emails (email+)>
+
+        <!ELEMENT parentescos EMPTY>
+
+        <!ATTLIST parentescos
+                padre_de CDATA #IMPLIED
+                hermano_de CDATA #IMPLIED
+                >
+
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+
         ]>
 
 <personas>
     <persona>
-        <nombre dni="44686144L" edad="25" sexo=""></nombre>
-        <email>fero@gmail.com</email>
-        <parentesco informacion=""></parentesco>
+        <nombre DNI="" sexo=""></nombre>
+        <emails>
+            <email></email>
+        </emails>
     </persona>
 </personas>

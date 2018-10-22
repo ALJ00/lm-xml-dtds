@@ -24,6 +24,7 @@
         <!ELEMENT caracteristica (#PCDATA)>
 
 
+
 <!ATTLIST producto  codigo CDATA #REQUIRED>
 <!ATTLIST datos_pedido fecha CDATA #REQUIRED>
 <!ATTLIST datos_pedido responsable_pedido (Antonio|Asun|Olga) #REQUIRED>
