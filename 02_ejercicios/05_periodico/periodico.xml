@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE periodico SYSTEM "periodico.dtd">
+
 <periodico>
     <cabecera>
-        <nombre>MARCA</nombre>
-        <fecha_de_edicion>27/09/2018</fecha_de_edicion>
-        <lugar>VITORIA</lugar>
-        <numero>2</numero>
-        <precio>20</precio>
+        <nombre></nombre>
+        <fecha></fecha>
+        <lugar_edicion></lugar_edicion>
+        <numero_ejemplar></numero_ejemplar>
+        <precio></precio>
     </cabecera>
     <portada>
-        <titular>ALAVÉS</titular>
-        <noticia_del_dia>VICTROIA DEL ALAVÉS</noticia_del_dia>
-        <publicidad>coca_cola</publicidad>
+        <titular></titular>
+        <noticias></noticias>
     </portada>
-    <seccion>
+    <secciones>
         <noticia tipo="">
             <titulo></titulo>
             <subtitulo></subtitulo>
             <entradilla></entradilla>
             <cuerpo></cuerpo>
         </noticia>
-    </seccion>
-    <contraportada>BASKONIA</contraportada>
+    </secciones>
+    <contraportada></contraportada>
 </periodico>
